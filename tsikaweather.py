@@ -20,7 +20,7 @@ def weather():
     s = button_entry.get()
     try:
         observation = owm.weather_at_place(s)
-    except :
+    except:
         error = mb.showerror("Ошибка", "Введите корректное название города")
     finally:
         w = observation.get_weather()
