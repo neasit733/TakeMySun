@@ -39,5 +39,5 @@ label_request.place(x=100, y=100)
 button_entry.place(x=100, y=120)
 button_get_weather.place(x=128, y=145)
 
-window.resizable(False, False)
+window.resizable(False, False) #мрази, не трогайте мое окно
 window.mainloop()
