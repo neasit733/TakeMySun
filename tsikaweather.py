@@ -10,13 +10,11 @@ weight = window.winfo_screenwidth()//2 - 300
 height = window.winfo_screenheight()//2 - 300
 window.geometry('335x500+{}+{}'.format(weight, height))
 
-
-owm = pyowm.OWM(API_key="f61564d6483322c50316ab46ed520830", language='ru')
-
 locale.setlocale(locale.LC_ALL, "Russian_Russia.1251")
 date = "%x"
 t = time.strftime(date)
 
+owm = pyowm.OWM(API_key="f61564d6483322c50316ab46ed520830", language='ru')
 
 def weather():
     s = button_entry.get()
@@ -36,12 +34,10 @@ label_request = Label(text="Введите название города", heigh
 button_entry = Entry(width=25)
 button_get_weather = Button(text='Узнать погоду!', command=weather)
 
-
 string_date.place(x=0, y=0)
 label_request.place(x=100, y=100)
 button_entry.place(x=100, y=120)
 button_get_weather.place(x=128, y=145)
-
 
 window.resizable(False, False)
 window.mainloop()
