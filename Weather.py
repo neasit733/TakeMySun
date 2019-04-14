@@ -5,7 +5,7 @@ import locale
 import pyowm
 
 window = Tk()
-window.title("TsikaWeather")
+window.title("Weather")
 weight = window.winfo_screenwidth()//2 - 300
 height = window.winfo_screenheight()//2 - 300
 window.geometry('335x500+{}+{}'.format(weight, height))
